@@ -1,0 +1,24 @@
+[
+  {
+    "identity_id": "arn:aws:iam::111122223333:user/analytics-readonly",
+    "severity": "critical",
+    "score": 100.0,
+    "reason": "Evento sensible 'privilege_escalation' seguido de pico de gasto en 'bedrock' ($1840.55) 39 min después",
+    "correlated": true,
+    "detected_at": "2026-07-21T14:40:05.012023",
+    "identity_event_type": "privilege_escalation",
+    "cost_service": "bedrock",
+    "cost_amount_usd": 1840.55
+  },
+  {
+    "identity_id": "arn:aws:iam::111122223333:user/svc-deploy-bot",
+    "severity": "critical",
+    "score": 95.0,
+    "reason": "Evento sensible 'mfa_disabled' seguido de pico de gasto en 'ec2' ($620.10) 14 min después",
+    "correlated": true,
+    "detected_at": "2026-07-21T14:40:05.012023",
+    "identity_event_type": "mfa_disabled",
+    "cost_service": "ec2",
+    "cost_amount_usd": 620.1
+  }
+]

@@ -1,0 +1,22 @@
+[project]
+name = "sicg"
+version = "0.1.0"
+description = "Sentinel Identity & Cost Guard — correlaciona anomalías de gasto en la nube con elevación de privilegios de identidad"
+requires-python = ">=3.11"
+dependencies = [
+    "boto3>=1.34",       # AWS Cost Explorer + CloudTrail
+    "msal>=1.28",        # Auth para Microsoft Graph (Entra ID)
+    "requests>=2.31",    # llamadas REST a Microsoft Graph
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.29",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+    "httpx>=0.27",  # requerido por fastapi.testclient.TestClient
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
