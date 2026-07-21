@@ -129,7 +129,7 @@ sicg/
   testing: calcular la media incluyendo el pico que se está evaluando lo
   auto-enmascara. Corregido en `find_cost_spikes()`.
 
-## Próximos pasos (para alinear contigo)
+## Próximos pasos 
 
 Pendiente de decidir orden de prioridad — estas son las piezas que faltan:
 
@@ -143,8 +143,3 @@ Pendiente de decidir orden de prioridad — estas son las piezas que faltan:
 8. **Persistencia real** — migrar `storage/repository.py` de SQLite a Postgres
 9. **threat-model.md** — modelo de amenazas del propio SICG (quién podría abusar de un sistema que puede revocar credenciales)
 10. Conectar `dashboard.html` a la API en vivo (`GET /summary`, `GET /signals`) en vez de JSON embebido a mano
-
-## Notas
-
-- Este README es el punto de partida para ir alineando qué se construye en cada sesión.
-- Cuando decidamos el orden de la lista de arriba, lo reflejamos aquí para no perder el hilo entre conversaciones.
