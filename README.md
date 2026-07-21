@@ -6,7 +6,7 @@ patrones que suelen indicar compromiso de cuenta o abuso interno: alguien
 escala permisos **y**, poco después, dispara un gasto muy por encima de su
 baseline habitual.
 
-Proyecto de portafolio orientado al mercado de seguridad/FinOps en Barcelona.
+Proyecto de portafolio orientado al mercado de seguridad/FinOps.
 
 ---
 
