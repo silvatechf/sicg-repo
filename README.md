@@ -13,20 +13,29 @@ Proyecto de portafolio orientado al mercado de seguridad/FinOps en Barcelona.
 ## Estado actual (20/07/2026)
 
 ✅ Estructura del repo definida (ingestión → normalización → correlación → respuesta → storage)
+
 ✅ Pipeline funcional de punta a punta, corriendo sobre datos sintéticos
+
 ✅ Motor de reglas + scoring de riesgo, con 11 tests unitarios en verde
+
 ✅ Dashboard funcional con datos reales generados por el pipeline
+
 ✅ ADRs escritos (0001 dataclasses-vs-pydantic, 0002 reglas-antes-que-ml)
-✅ Workflow de CI/CD escrito (`.github/workflows/ci.yml`) — YAML validado sintácticamente
+
+✅ Workflow de CI/CD escrito (`.github/workflows/ci.yml`) — YAML validado 
+
 🟡 Conectores reales escritos (`aws_cost.py`, `aws_iam.py`, `entra_id.py`) y API con FastAPI
    (`api/main.py`, `api/routers/`) — código completo con boto3/msal/fastapi, con tests
-   (mocks para conectores, `TestClient` para la API), **pero no ejecutados todavía**:
+   (mocks para conectores, `TestClient` para la API), 
    el entorno donde se escribieron no tiene acceso a red para instalar esas librerías.
    Sintaxis verificada (`py_compile`), lógica no verificada en ejecución real.
    **El propio workflow de CI (`ci.yml`) es justamente lo que debe validar esto en
    cuanto se haga el primer push a GitHub — instala dependencias reales y corre todo.**
+
 ⬜ Persistencia real (Postgres) en vez de SQLite en memoria
+
 ⬜ threat-model.md
+
 ⬜ Probar los conectores contra una cuenta AWS / tenant Entra real (sandbox, no producción)
 
 ## Cómo correrlo
