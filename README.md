@@ -129,6 +129,20 @@ sicg/
   testing: calcular la media incluyendo el pico que se está evaluando lo
   auto-enmascara. Corregido en `find_cost_spikes()`.
 
+
+## El problema que resuelve
+
+Las herramientas de CIEM (Cloud Infrastructure Entitlement Management) y
+las de FinOps casi siempre viven en silos separados: una analiza permisos,
+la otra analiza gasto, y ninguna de las dos ve la señal más obvia de
+abuso — que ambas cosas pasen casi a la vez para la misma identidad.
+
+## Documentación
+
+- **[docs/architecture.md](docs/architecture.md)** — diagrama de flujo de datos y decisiones de diseño con impacto arquitectónico
+- **[docs/adr/](docs/adr/)** — Architecture Decision Records
+
+
 ## Próximos pasos 
 
 Pendiente de decidir orden de prioridad — estas son las piezas que faltan:
